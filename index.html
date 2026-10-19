@@ -1,0 +1,372 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Furniture untuk hidup pelan — LARASADA</title><meta name="description" content="Furniture dengan material jujur, dibuat pelan di Indonesia.">
+<script>try{if(sessionStorage.getItem("wipe")==='1')document.documentElement.classList.add("wi")}catch(e){}</script>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preload" as="image" href="images/hero.jpg">
+<style>@font-face{font-family:'General Sans';src:url('../mwcs/fonts/general-sans-400.woff2') format('woff2');font-weight:400;font-display:swap}@font-face{font-family:'General Sans';src:url('../mwcs/fonts/general-sans-500.woff2') format('woff2');font-weight:500;font-display:swap}@font-face{font-family:'General Sans';src:url('../mwcs/fonts/general-sans-600.woff2') format('woff2');font-weight:600;font-display:swap}@font-face{font-family:'Clash Display';src:url('../mwcs/fonts/clash-display-400.woff2') format('woff2');font-weight:400;font-display:swap}@font-face{font-family:'Clash Display';src:url('../mwcs/fonts/clash-display-500.woff2') format('woff2');font-weight:500;font-display:swap}@font-face{font-family:'Clash Display';src:url('../mwcs/fonts/clash-display-600.woff2') format('woff2');font-weight:600;font-display:swap}@font-face{font-family:'Instrument Serif';src:url('../mwcs/fonts/instrument-serif-italic.woff2') format('woff2');font-style:italic;font-display:swap}
+:root{--ink:#111210;--bg:#fff;--paper:#fff;--gray:#f3f3f1;--dark:#1b1c1a;--muted:#62635a;--line:#e6e6e2;--clay:#b67b5b;--sage:#dde2d7;
+--sans:'General Sans',Arial,sans-serif;--disp:'Clash Display',Arial,sans-serif;--serif:'Instrument Serif',Georgia,serif;
+--ease:cubic-bezier(.22,.61,.36,1);--pad:clamp(16px,3vw,40px)}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{background:var(--paper);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:96px}
+body.top-photo{padding-top:0}
+body.top-photo .hero{margin:0;height:100svh;border-radius:0}
+a{color:inherit;text-decoration:none}button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}input{font:inherit}
+.shell{width:100%;padding-inline:var(--pad)}
+/* announcement */
+.anno{position:fixed;top:0;left:0;right:0;z-index:71;height:34px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.anno span{opacity:.85}
+/* header */
+.hd{height:62px;display:flex;align-items:center;justify-content:space-between;background:transparent;border-bottom:1px solid transparent;position:fixed;top:34px;left:0;right:0;z-index:70;padding-inline:var(--pad);color:var(--ink);transition:background .35s var(--ease),border-color .35s var(--ease),color .35s}
+body.top-photo .hd{color:#fff}
+body.top-photo .hd.sc{color:var(--ink)}
+.hd.sc{background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.hd nav{display:flex;gap:26px;align-items:center}
+.hd .item{font-size:11px;letter-spacing:.14em;text-transform:uppercase;position:relative;padding:22px 0;display:inline-block}
+.hd .item::after{content:'';position:absolute;left:0;right:100%;bottom:16px;height:1px;background:currentColor;transition:right .45s var(--ease)}
+.hd .item:hover::after{right:0}
+.wm{font-family:var(--disp);font-weight:500;letter-spacing:.34em;font-size:15px;text-transform:uppercase}
+.hd .rt{display:flex;gap:22px;align-items:center}
+.hd .rt button,.hd .rt a{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.burger{display:none;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+/* mega menu */
+.mega{position:absolute;top:96px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:39;display:grid;grid-template-columns:repeat(3,1fr) 1.15fr;gap:30px;padding:34px var(--pad) 40px;clip-path:inset(0 0 100% 0);visibility:hidden;transition:clip-path .55s var(--ease),visibility .55s}
+.mega.open{clip-path:inset(0);visibility:visible}
+.mega h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:500}
+.mega ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.mega ul a{font-size:14px;display:inline-block;transition:transform .35s var(--ease)}
+.mega ul a:hover{transform:translateX(6px)}
+.mega .mg-img{height:210px;overflow:hidden;background:var(--gray)}
+.mega .mg-img img{transition:transform 1s var(--ease)}.mg-img:hover img{transform:scale(1.05)}
+/* hero */
+.hero{position:relative;margin:0;height:min(78vh,calc(100vw/1.508));min-height:480px;overflow:hidden;border-radius:0;background:var(--gray)}
+.hero-media{position:absolute;inset:0;overflow:hidden}
+.hero-media img{transform:scale(1.12);transition:transform 1.6s var(--ease)}
+body.loaded .hero-media img{transform:scale(1)}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,6,.88),rgba(8,8,6,.62) 46%,rgba(8,8,6,.32) 78%);pointer-events:none}
+.hero::before{content:'';position:absolute;inset:0 0 auto 0;height:170px;background:linear-gradient(to bottom,rgba(17,18,16,1) 0,rgba(17,18,16,.86) 56%,rgba(8,8,6,0) 100%);z-index:1;pointer-events:none}
+.hero-copy{position:absolute;left:var(--pad);bottom:clamp(26px,5vw,58px);z-index:2;color:#fff;max-width:min(640px,86%);text-shadow:0 1px 18px rgba(0,0,0,.5)}
+.hero-copy h1{font-family:var(--disp);font-weight:400;font-size:clamp(34px,3.6vw,48px);line-height:.95;letter-spacing:-.03em;margin:0 0 14px}
+.ln{display:block;overflow:hidden}.ln i{display:block;font-style:normal;transform:translateY(110%);transition:transform 1s var(--ease) .25s}body.loaded .ln i{transform:none}
+.hero-copy .sub{color:#f2f2ef;margin:0 0 22px;font-size:14px;opacity:0;transform:translateY(14px);transition:all .9s var(--ease) .5s}body.loaded .hero-copy .sub{opacity:1;transform:none}
+.hero-copy .btn{opacity:0;transform:translateY(14px);transition:all .9s var(--ease) .65s}body.loaded .hero-copy .btn{opacity:1;transform:none}
+/* buttons */
+.btn{display:inline-block;border:1px solid var(--ink);padding:13px 26px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;background:#fff;color:var(--ink);transition:background .35s var(--ease),color .35s var(--ease),border-color .35s}
+.btn:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;border-color:#fff}
+.btn-light:hover{background:transparent;color:#fff;border-color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:transparent;color:var(--ink)}
+/* sections */
+.sec{padding:clamp(56px,7vw,96px) 0;border-top:1px solid var(--line)}
+.sec:first-child{border-top:0}
+.shead{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:26px}
+.shead h2{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin:0}
+.shead .cnt{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-left:14px}
+.shead-r{display:flex;align-items:center;gap:14px}
+.mlink{font-size:10px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:3px;transition:opacity .3s}.mlink:hover{opacity:.55}
+.arw{width:38px;height:32px;border:1px solid var(--ink);font-size:13px;transition:background .3s,color .3s,opacity .3s}
+.arw:hover{background:var(--ink);color:#fff}.arw[disabled]{opacity:.25;pointer-events:none}
+/* rail + cards */
+.rail{display:flex;gap:14px;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth;cursor:grab;padding-bottom:4px}
+.rail::-webkit-scrollbar{display:none}.rail.dragging{cursor:grabbing;scroll-behavior:auto}
+.pc{flex:0 0 calc((100% - 3*14px)/4.15);display:block;position:relative}
+.pc-m{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--gray)}
+.pc-m img{transition:transform 1.1s var(--ease),filter .6s}.pc:hover .pc-m img{transform:scale(1.06)}
+.badge{position:absolute;top:10px;left:10px;background:#fff;padding:5px 9px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;z-index:2}
+.qv{position:absolute;left:0;right:0;bottom:0;background:rgba(17,18,16,.92);color:#fff;text-align:center;padding:11px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;transform:translateY(101%);transition:transform .45s var(--ease)}
+.pc:hover .qv{transform:none}
+.pc-i{padding:11px 2px 0}
+.pc-i .t{margin:0;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.pc-i .p{margin:5px 0 0;font-size:12px}
+.pc-i .m{margin:3px 0 0;font-size:11px;color:var(--muted)}
+.rail-meta{display:flex;align-items:center;gap:16px;margin-top:22px}
+.rail-n{font-size:10px;letter-spacing:.14em;color:var(--muted)}
+.rail-bar{flex:1;height:1px;background:var(--line);position:relative}
+.rail-bar i{position:absolute;left:0;top:0;height:1px;background:var(--ink);width:25%;transition:width .5s var(--ease),left .5s var(--ease)}
+/* product grid */
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+/* shop the look */
+.stl-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(20px,3vw,44px);align-items:start}
+.stl-grid.rev{grid-template-columns:1.15fr .85fr}
+.stl-h{font-family:var(--disp);font-weight:400;font-size:clamp(30px,3.4vw,50px);letter-spacing:-.02em;margin:0 0 10px}
+.cap{color:var(--muted);font-size:13.5px;max-width:360px;margin:0 0 26px}
+.stl-mini{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:26px}
+.pc.sm{flex:none}
+.stl-media{aspect-ratio:4/4.6;overflow:hidden;background:var(--gray);border-radius:4px}
+.stl-media img{transition:transform 1.2s var(--ease)}
+/* dark */
+.dark{background:var(--dark);color:#fff;border-top:0}
+.dark .shell{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,60px);align-items:center}
+.dark .film{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:4px}
+.dark .film::after{content:'Putar film ↗';position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.32);font-size:10px;letter-spacing:.18em;text-transform:uppercase;transition:background .4s}
+.dark .film:hover::after{background:rgba(0,0,0,.12)}
+.dark h2{font-family:var(--disp);font-weight:400;font-size:clamp(34px,4.2vw,62px);line-height:1;letter-spacing:-.02em;margin:14px 0 16px}
+.dark h2 em{font-family:var(--serif);font-style:italic;color:#c9d0bf}
+.dark p{color:#b9bab2;max-width:420px;font-size:14.5px;margin:0 0 26px}
+.dark .lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8d8f85}
+.dark .btn{background:transparent;border-color:#fff;color:#fff}
+.dark .btn:hover{background:#fff;color:var(--ink)}
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px}
+.cat{position:relative;height:min(62vh,560px);overflow:hidden;border-radius:4px;background:var(--gray)}
+.cat img{transition:transform 1.2s var(--ease)}.cat:hover img{transform:scale(1.06)}
+.cat .cbtn{position:absolute;left:12px;right:12px;bottom:12px;background:#fff;text-align:center;padding:14px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;transition:background .35s,color .35s}
+.cat:hover .cbtn{background:var(--ink);color:#fff}
+/* feature */
+.feature{background:var(--gray)}
+.feature .shell{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);align-items:center}
+.feature .fimg{aspect-ratio:4/3.2;overflow:hidden;border-radius:4px;background:#e7e7e3}
+.feature h2{font-family:var(--disp);font-weight:400;font-size:clamp(34px,4.4vw,64px);line-height:1;letter-spacing:-.02em;margin:12px 0 16px}
+.feature p{color:var(--muted);max-width:430px;font-size:14.5px;margin:0 0 26px}
+.feature .lbl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+/* marquee */
+.band{background:var(--ink);color:#fff;overflow:hidden;padding:15px 0;border-top:1px solid var(--ink)}
+.track{display:flex;gap:44px;white-space:nowrap;width:max-content;animation:mq 32s linear infinite;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.track span{opacity:.8}@keyframes mq{to{transform:translateX(-50%)}}
+/* newsletter */
+.news{text-align:center;padding:clamp(64px,8vw,110px) var(--pad);border-top:1px solid var(--line)}
+.news h2{font-family:var(--disp);font-weight:400;font-size:clamp(32px,4vw,56px);letter-spacing:-.02em;margin:0 0 8px}
+.news p{color:var(--muted);font-size:13.5px;margin:0 auto 34px;max-width:420px}
+.nform{display:flex;gap:0;max-width:520px;margin:0 auto;border-bottom:1px solid var(--ink)}
+.nform input{flex:1;border:0;background:none;padding:14px 4px;outline:0;font-size:14px}
+.nform button{font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:0 6px;transition:transform .35s var(--ease)}
+.nform button:hover{transform:translateX(5px)}
+/* footer */
+footer{background:var(--paper);border-top:1px solid var(--line);padding:clamp(44px,6vw,72px) var(--pad) 0}
+.fcols{display:grid;grid-template-columns:repeat(5,1fr);gap:26px;padding-bottom:44px}
+.fcols h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:500}
+.fcols ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fcols a{font-size:13px;transition:opacity .3s}.fcols a:hover{opacity:.55}
+.fwm{border-top:1px solid var(--line);padding:26px 0 30px;display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fbig{font-family:var(--disp);font-weight:500;font-size:clamp(56px,13vw,190px);line-height:.8;letter-spacing:.02em;text-align:center;padding:14px 0 30px;color:var(--ink);user-select:none}
+/* overlays */
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,92vw);background:#fff;z-index:60;transform:translateX(103%);transition:transform .55s var(--ease);display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(0,0,0,.08)}
+.drawer.open{transform:none}
+.drawer .dh{display:flex;justify-content:space-between;align-items:center;padding:20px var(--pad);border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.drawer .db{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;color:var(--muted);font-size:13.5px}
+.scrim{position:fixed;inset:0;background:rgba(17,18,16,.4);opacity:0;pointer-events:none;transition:opacity .5s;z-index:55;backdrop-filter:blur(2px)}
+.scrim.on{opacity:1;pointer-events:auto}
+.searchbar{position:fixed;top:0;left:0;right:0;background:#fff;z-index:61;transform:translateY(-103%);transition:transform .55s var(--ease);padding:26px var(--pad);border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:center}
+.searchbar.open{transform:none}
+.searchbar input{flex:1;border:0;border-bottom:1px solid var(--line);padding:12px 2px;outline:0;font-size:clamp(18px,2.4vw,28px);font-family:var(--disp)}
+.searchbar button{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.mm{position:fixed;inset:0;background:#fff;z-index:62;transform:translateY(-101%);transition:transform .6s var(--ease);padding:24px var(--pad);display:flex;flex-direction:column;gap:6px}
+.mm.open{transform:none}
+.mm a{font-family:var(--disp);font-size:34px;letter-spacing:-.02em;padding:8px 0;border-bottom:1px solid var(--line)}
+.mm .close{align-self:flex-end;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+.wipe{position:fixed;inset:0;background:var(--ink);z-index:80;transform:scaleX(0);transform-origin:left;pointer-events:none}
+html.wi .wipe{transform:scaleX(1);transform-origin:right}
+.wipe.go{animation:wipe .6s var(--ease)}@keyframes wipe{0%{transform:scaleX(0);transform-origin:left}45%{transform:scaleX(1);transform-origin:left}55%{transform:scaleX(1);transform-origin:right}100%{transform:scaleX(0);transform-origin:right}}
+@keyframes wipeIn{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+.wipe.in{animation:wipeIn .45s var(--ease)}
+/* ken burns: video pelan dari foto */
+@keyframes kb{from{transform:scale(1.06)}to{transform:scale(1.15)}}
+.plx{position:absolute;inset:0;will-change:transform}
+.plx>img{width:100%;height:100%;object-fit:cover;animation:kb 18s ease-in-out infinite alternate}
+.film>img{animation:kb 14s ease-in-out infinite alternate}
+.prog{position:fixed;left:0;top:0;height:2px;background:var(--clay);width:100%;transform:scaleX(0);transform-origin:left;z-index:70}
+/* reveal — konten tetap terlihat kalau JS tak jalan */
+.rv{opacity:1;transform:none;transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.pre{opacity:0;transform:translateY(26px)}
+.rv.pre.in{opacity:1;transform:none}
+/* responsive */
+@media(max-width:1024px){
+.hd nav.lft,.hd nav.rgt .d{display:none}.burger{display:inline-block}
+.mega{display:none}
+.pc{flex-basis:calc((100% - 2*14px)/2.3)}
+.pgrid{grid-template-columns:repeat(2,1fr)}
+.stl-grid,.stl-grid.rev,.dark .shell,.feature .shell{grid-template-columns:1fr}
+.stl-grid.rev .stl-media{order:-1}
+.cats{grid-template-columns:1fr}.cat{height:52vh}
+.fcols{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+.hero{height:calc(100svh - 100px);min-height:420px}
+.pc{flex-basis:78%}
+.stl-mini{grid-template-columns:1fr 1fr}
+.shead{flex-wrap:wrap}
+.fwm{flex-direction:column;gap:8px;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+.rv.pre{opacity:1;transform:none}.ln i{transform:none}.track{animation:none}
+}
+</style></head><body class="top-photo">
+<div class="anno"><span>Pengiriman gratis ke seluruh Indonesia · Custom size tersedia · Dibuat di Bandung</span></div>
+<header class="hd">
+<nav class="lft"><button class="item" id="shopBtn">Shop ▾</button><a class="item" href="#ruang">Ruang</a><a class="item" href="about.html">Cerita</a></nav>
+<a class="wm" href="index.html">Larasada</a>
+<nav class="rgt"><button class="item d" id="searchBtn">Cari</button><a class="item d" href="collection.html">Koleksi</a><button class="item" id="cartBtn">Keranjang (0)</button><button class="burger" id="burger">Menu</button></nav>
+</header>
+<div class="mega" id="mega">
+<div><h4>Ruang</h4><ul><li><a href="collection.html">Ruang tamu</a></li><li><a href="collection.html">Ruang makan</a></li><li><a href="collection.html">Kamar tidur</a></li><li><a href="collection.html">Ruang kerja</a></li></ul></div>
+<div><h4>Produk</h4><ul><li><a href="collection.html">Kursi & Sofa</a></li><li><a href="collection.html">Meja</a></li><li><a href="collection.html">Pencahayaan</a></li><li><a href="collection.html">Penyimpanan</a></li></ul></div>
+<div><h4>Material</h4><ul><li><a href="about.html">Walnut</a></li><li><a href="about.html">Linen & Boucle</a></li><li><a href="about.html">Keramik</a></li><li><a href="about.html">Batu alam</a></li></ul></div>
+<div class="mg-img"><img src="images/look2.jpg" alt="Sudut ruang makan Larasada" loading="lazy"></div>
+</div>
+<main>
+<section class="hero">
+<div class="hero-media"><div class="plx"><img src="images/hero.jpg" alt="Ruang tamu Larasada dengan sofa linen dan meja walnut"></div></div>
+<div class="hero-copy">
+<h1><span class="ln"><i>Koleksi 2026</i></span></h1>
+<p class="sub">Koleksi baru sudah tersedia.</p>
+<a class="btn btn-light" href="collection.html">Lihat semua produk</a>
+</div>
+</section>
+<section class="sec"><div class="shell">
+<div class="shead rv"><div class="shead-l"><h2>Produk baru</h2><span class="cnt">11 produk</span></div>
+<div class="shead-r"><a class="mlink" href="collection.html">Lihat semua produk ↗</a>
+<button class="arw" data-rail="#railNew" data-dir="-1" aria-label="Sebelumnya">←</button>
+<button class="arw" data-rail="#railNew" data-dir="1" aria-label="Berikutnya">→</button></div></div>
+<div class="rail" id="railNew"><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Baru</span><img src="images/sofa.jpg" alt="Awan lounge chair — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Awan lounge chair</p><p class="p">Rp 8.400.000,00</p><p class="m">Boucle / Walnut</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Baru</span><img src="images/table.jpg" alt="Rara dining table — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Rara dining table</p><p class="p">Rp 12.800.000,00</p><p class="m">Solid walnut</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Pre-order</span><img src="images/lamp.jpg" alt="Sela table lamp — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Sela table lamp</p><p class="p">Rp 1.850.000,00</p><p class="m">Keramik / Linen</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_shelf.jpg" alt="Nara bookshelf — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Nara bookshelf</p><p class="p">Rp 6.900.000,00</p><p class="m">Teak / Open frame</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Baru</span><img src="images/p_stool.jpg" alt="Tala stool — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Tala stool</p><p class="p">Rp 2.450.000,00</p><p class="m">Walnut / Rotan</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_bench.jpg" alt="Lini bench — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Lini bench</p><p class="p">Rp 5.200.000,00</p><p class="m">Oak / Linen</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_desk.jpg" alt="Rangka writing desk — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Rangka writing desk</p><p class="p">Rp 7.600.000,00</p><p class="m">Walnut / One drawer</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Best seller</span><img src="images/p_chair2.jpg" alt="Kurva dining chair — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Kurva dining chair</p><p class="p">Rp 3.900.000,00</p><p class="m">Dark walnut</p></div></a></div>
+<div class="rail-meta"><span class="rail-n">01 / 08</span><span class="rail-bar"><i></i></span></div>
+</div></section>
+<section class="sec"><div class="shell">
+<div class="shead rv"><div class="shead-l"><h2>Best seller</h2><span class="cnt">4 produk</span></div>
+<div class="shead-r"><a class="mlink" href="collection.html">Belanja sekarang ↗</a></div></div>
+<div class="pgrid">
+<a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Best seller</span><img src="images/p_sofa2.jpg" alt="Samudra sofa 3-seat — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Samudra sofa 3-seat</p><p class="p">Rp 15.400.000,00</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Best seller</span><img src="images/p_chair2.jpg" alt="Kurva dining chair — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Kurva dining chair</p><p class="p">Rp 3.900.000,00</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_rug.jpg" alt="Anyam floor rug — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Anyam floor rug</p><p class="p">Rp 3.750.000,00</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Pre-order</span><img src="images/p_vase.jpg" alt="Tanah floor vase — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Tanah floor vase</p><p class="p">Rp 1.250.000,00</p></div></a>
+</div>
+</div></section>
+<section class="sec stl"><div class="shell">
+<div class="stl-grid">
+<div class="stl-side">
+<h2 class="stl-h rv">Shop the Look</h2>
+<p class="cap rv">Ruang tamu disusun pelan: sofa boucle, meja walnut, dan cahaya pagi lewat tirai linen.</p>
+<div class="stl-mini">
+<a class="pc sm" href="product.html"><div class="pc-m"><img src="images/sofa.jpg" alt="Awan lounge chair" loading="lazy"></div><div class="pc-i"><p class="t">Awan lounge chair</p><p class="p">Rp 8.400.000,00</p></div></a><a class="pc sm" href="product.html"><div class="pc-m"><img src="images/lamp.jpg" alt="Sela table lamp" loading="lazy"></div><div class="pc-i"><p class="t">Sela table lamp</p><p class="p">Rp 1.850.000,00</p></div></a><a class="pc sm" href="product.html"><div class="pc-m"><img src="images/p_vase.jpg" alt="Tanah floor vase" loading="lazy"></div><div class="pc-i"><p class="t">Tanah floor vase</p><p class="p">Rp 1.250.000,00</p></div></a><a class="pc sm" href="product.html"><div class="pc-m"><img src="images/p_rug.jpg" alt="Anyam floor rug" loading="lazy"></div><div class="pc-i"><p class="t">Anyam floor rug</p><p class="p">Rp 3.750.000,00</p></div></a>
+</div>
+<a class="btn rv" href="collection.html">Beli seluruh tampilan</a>
+</div>
+<div class="stl-media rv"><img src="images/look1.jpg" alt="Tampilan ruang tamu Larasada" class="plx" loading="lazy"></div>
+</div>
+</div></section>
+<section class="sec"><div class="shell">
+<div class="shead rv"><div class="shead-l"><h2>Paling dicari</h2><span class="cnt">9 produk</span></div>
+<div class="shead-r"><a class="mlink" href="collection.html">Belanja populer ↗</a>
+<button class="arw" data-rail="#railHot" data-dir="-1" aria-label="Sebelumnya">←</button>
+<button class="arw" data-rail="#railHot" data-dir="1" aria-label="Berikutnya">→</button></div></div>
+<div class="rail" id="railHot"><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Best seller</span><img src="images/p_sofa2.jpg" alt="Samudra sofa 3-seat — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Samudra sofa 3-seat</p><p class="p">Rp 15.400.000,00</p><p class="m">Linen sand</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Baru</span><img src="images/table.jpg" alt="Rara dining table — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Rara dining table</p><p class="p">Rp 12.800.000,00</p><p class="m">Solid walnut</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Baru</span><img src="images/sofa.jpg" alt="Awan lounge chair — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Awan lounge chair</p><p class="p">Rp 8.400.000,00</p><p class="m">Boucle / Walnut</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_desk.jpg" alt="Rangka writing desk — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Rangka writing desk</p><p class="p">Rp 7.600.000,00</p><p class="m">Walnut / One drawer</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_shelf.jpg" alt="Nara bookshelf — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Nara bookshelf</p><p class="p">Rp 6.900.000,00</p><p class="m">Teak / Open frame</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_bench.jpg" alt="Lini bench — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Lini bench</p><p class="p">Rp 5.200.000,00</p><p class="m">Oak / Linen</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Baru</span><img src="images/p_stool.jpg" alt="Tala stool — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Tala stool</p><p class="p">Rp 2.450.000,00</p><p class="m">Walnut / Rotan</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><img src="images/p_rug.jpg" alt="Anyam floor rug — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Anyam floor rug</p><p class="p">Rp 3.750.000,00</p><p class="m">Jute / Wool</p></div></a><a class="pc rv" href="product.html"><div class="pc-m"><span class="badge">Best seller</span><img src="images/p_chair2.jpg" alt="Kurva dining chair — Larasada" loading="lazy"><span class="qv">Cepat lihat</span></div><div class="pc-i"><p class="t">Kurva dining chair</p><p class="p">Rp 3.900.000,00</p><p class="m">Dark walnut</p></div></a></div>
+<div class="rail-meta"><span class="rail-n">01 / 09</span><span class="rail-bar"><i></i></span></div>
+</div></section>
+<section class="sec dark"><div class="shell">
+<div class="film rv"><img src="images/material.jpg" alt="Pengrajin menghaluskan meja walnut" loading="lazy"></div>
+<div class="rv"><span class="lbl">02 — Proses</span>
+<h2>Setiap objek punya <em>gestur.</em></h2>
+<p>Dari tangan pengrajin di bengkel kami sampai ruang tempat ia tinggal. Lihat bagaimana koleksi Larasada dibuat, pelan dan tanpa terburu.</p>
+<a class="btn" href="about.html">Temui pembuatnya</a></div>
+</div></section>
+<section class="sec" id="ruang" style="border-top:0;padding-bottom:0"><div class="shell">
+<div class="shead rv"><div class="shead-l"><h2>Belanja per ruang</h2><span class="cnt">3 kategori</span></div></div></div>
+<div class="cats">
+<a class="cat rv" href="collection.html"><img src="images/hero.jpg" alt="Furniture ruang tamu" loading="lazy"><span class="cbtn">Beli ruang tamu</span></a>
+<a class="cat rv" href="collection.html"><img src="images/table.jpg" alt="Furniture ruang makan" loading="lazy"><span class="cbtn">Beli ruang makan</span></a>
+<a class="cat rv" href="collection.html"><img src="images/lamp.jpg" alt="Pencahayaan" loading="lazy"><span class="cbtn">Beli pencahayaan</span></a>
+</div></section>
+<section class="sec feature"><div class="shell">
+<div class="fimg rv"><img src="images/look2.jpg" alt="Koleksi Rara — meja walnut" class="plx" loading="lazy"></div>
+<div class="rv"><span class="lbl">Koleksi 03</span>
+<h2>Koleksi Rara.</h2>
+<p>Meja makan walnut dengan sudut lembut, dibuat dari satu bilah kayu pilihan. Kembali tersedia dalam jumlah terbatas.</p>
+<a class="btn btn-dark" href="product.html">Lihat koleksi Rara</a></div>
+</div></section>
+<section class="sec stl"><div class="shell">
+<div class="stl-grid rev">
+<div class="stl-media rv"><img src="images/look3.jpg" alt="Tampilan kamar tidur Larasada" class="plx" loading="lazy"></div>
+<div class="stl-side">
+<h2 class="stl-h rv">Shop the Look</h2>
+<p class="cap rv">Tempat beristirahat: rangka kayu, seprai linen, dan satu lampu lembut di samping.</p>
+<div class="stl-mini">
+<a class="pc sm" href="product.html"><div class="pc-m"><img src="images/p_sofa2.jpg" alt="Samudra sofa 3-seat" loading="lazy"></div><div class="pc-i"><p class="t">Samudra sofa 3-seat</p><p class="p">Rp 15.400.000,00</p></div></a><a class="pc sm" href="product.html"><div class="pc-m"><img src="images/p_chair2.jpg" alt="Kurva dining chair" loading="lazy"></div><div class="pc-i"><p class="t">Kurva dining chair</p><p class="p">Rp 3.900.000,00</p></div></a><a class="pc sm" href="product.html"><div class="pc-m"><img src="images/lamp.jpg" alt="Sela table lamp" loading="lazy"></div><div class="pc-i"><p class="t">Sela table lamp</p><p class="p">Rp 1.850.000,00</p></div></a><a class="pc sm" href="product.html"><div class="pc-m"><img src="images/p_desk.jpg" alt="Rangka writing desk" loading="lazy"></div><div class="pc-i"><p class="t">Rangka writing desk</p><p class="p">Rp 7.600.000,00</p></div></a>
+</div>
+<a class="btn rv" href="collection.html">Beli seluruh tampilan</a>
+</div>
+</div>
+</div></section>
+<div class="band"><div class="track">
+<span>Material jujur</span><span>—</span><span>Dibuat pelan</span><span>—</span><span>Pengrajin lokal</span><span>—</span><span>Garansi 5 tahun</span><span>—</span><span>Custom size</span><span>—</span>
+<span>Material jujur</span><span>—</span><span>Dibuat pelan</span><span>—</span><span>Pengrajin lokal</span><span>—</span><span>Garansi 5 tahun</span><span>—</span><span>Custom size</span><span>—</span>
+</div></div>
+<section class="news">
+<h2 class="rv">Gabung keluarga</h2>
+<p class="rv">Catatan kecil soal material, perawatan, dan koleksi baru — sebulan sekali.</p>
+<form class="nform rv"><input type="email" required placeholder="Alamat email" aria-label="Alamat email"><button>Daftar ↗</button></form>
+</section>
+</main>
+<footer>
+<div class="fcols">
+<div><h4>Showroom</h4><ul><li><a href="contact.html">Jl. Kemang Raya 12<br>Jakarta Selatan</a></li><li><a href="contact.html">Sen–Sab, 10.00–18.00</a></li></ul></div>
+<div><h4>Belanja</h4><ul><li><a href="collection.html">Semua produk</a></li><li><a href="collection.html">Ruang tamu</a></li><li><a href="collection.html">Ruang makan</a></li><li><a href="collection.html">Pencahayaan</a></li></ul></div>
+<div><h4>Bantuan</h4><ul><li><a href="contact.html">Pengiriman</a></li><li><a href="contact.html">Perawatan</a></li><li><a href="contact.html">Garansi</a></li><li><a href="contact.html">Tanya jawab</a></li></ul></div>
+<div><h4>Studio</h4><ul><li><a href="about.html">Cerita kami</a></li><li><a href="journal.html">Journal</a></li><li><a href="contact.html">Kontak</a></li></ul></div>
+<div><h4>Sosial</h4><ul><li><a href="contact.html">Instagram</a></li><li><a href="contact.html">Pinterest</a></li><li><a href="contact.html">WhatsApp</a></li></ul></div>
+</div>
+<div class="fbig">LARASADA</div>
+<div class="fwm"><span>© 2026 Larasada Studio</span><span>Jakarta / Bandung / Indonesia</span></div>
+</footer>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"><div class="dh"><span>Keranjang (0)</span><button id="closeCart">Tutup</button></div>
+<div class="db"><span>Keranjang masih kosang.</span><a class="btn" href="collection.html">Mulai belanja</a></div></aside>
+<div class="searchbar" id="searchbar"><input type="search" placeholder="Cari produk…" aria-label="Cari produk"><button id="closeSearch">Tutup</button></div>
+<nav class="mm" id="mm"><button class="close" id="closeMm">Tutup</button><a href="collection.html">Shop</a><a href="#ruang">Ruang</a><a href="about.html">Cerita</a><a href="journal.html">Journal</a><a href="contact.html">Kontak</a></nav>
+<div class="prog" id="prog"></div><div class="wipe" id="wipe"></div>
+<script>
+(()=>{const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
+requestAnimationFrame(()=>document.body.classList.add('loaded'));
+/* reveal: tambah pre cuma kalau elemen belum terlihat, jadi tak pernah blank */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('pre');e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+qa('.rv').forEach((el,i)=>{const r=el.getBoundingClientRect();if(r.top>innerHeight*.9&&!reduce){el.classList.add('pre');el.style.transitionDelay=(i%4)*60+'ms';io.observe(el)}});
+/* parallax */
+let tick=false;
+addEventListener('scroll',()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-innerHeight;const p=q('#prog');if(p)p.style.transform='scaleX('+(max>0?scrollY/max:0)+')';const hd=q('.hd');if(hd)hd.classList.toggle('sc',scrollY>60);
+if(!reduce)qa('.plx').forEach(img=>{const r=img.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){const off=(r.top+r.height/2-innerHeight/2)*-.06;img.style.transform='translate3d(0,'+off+'px,0) scale(1.12)'}});
+/* jaring pengaman: kalau observer kelewatan, buka juga saat scroll */
+qa('.rv.pre').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight*.95){el.classList.remove('pre');el.classList.add('in')}});
+tick=false})},{passive:true});
+/* carousel */
+qa('.rail').forEach(rail=>{const bar=rail.parentElement.querySelector('.rail-bar i'),n=rail.parentElement.querySelector('.rail-n');
+const total=rail.children.length;
+const upd=()=>{const w=rail.children[0].getBoundingClientRect().width+14;const i=Math.round(rail.scrollLeft/w);const per=1+Math.round(rail.clientWidth/w);
+if(bar){bar.style.width=Math.min(100,per/total*100)+'%';bar.style.left=Math.min(100-per/total*100,i/total*100)+'%'}
+if(n)n.textContent=String(Math.min(i+1,total)).padStart(2,'0')+' / '+String(total).padStart(2,'0');
+rail.parentElement.querySelectorAll('.arw').forEach(b=>{const dir=+b.dataset.dir;b.disabled=(dir<0&&rail.scrollLeft<8)||(dir>0&&rail.scrollLeft>rail.scrollWidth-rail.clientWidth-8)})};
+rail.addEventListener('scroll',()=>{requestAnimationFrame(upd)},{passive:true});
+let down=false,sx=0,sl=0,moved=0;
+rail.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'){down=true;sx=e.clientX;sl=rail.scrollLeft;moved=0;rail.classList.add('dragging')}});
+rail.addEventListener('pointermove',e=>{if(!down)return;const d=e.clientX-sx;moved=Math.abs(d);rail.scrollLeft=sl-d});
+['pointerup','pointercancel','pointerleave'].forEach(t=>rail.addEventListener(t,()=>{down=false;rail.classList.remove('dragging')}));
+rail.addEventListener('click',e=>{if(moved>6)e.preventDefault()},true);
+setTimeout(upd,60)});
+qa('.arw').forEach(b=>b.addEventListener('click',()=>{const rail=q(b.dataset.rail);const w=rail.children[0].getBoundingClientRect().width+14;rail.scrollBy({left:w*2*+b.dataset.dir,behavior:reduce?'auto':'smooth'})}));
+/* overlays */
+const scrim=q('#scrim'),drawer=q('#drawer'),sb=q('#searchbar'),mm=q('#mm');
+const closeAll=()=>{drawer.classList.remove('open');sb.classList.remove('open');mm.classList.remove('open');scrim.classList.remove('on');document.body.style.overflow=''};
+const open=el=>{closeAll();el.classList.add('open');scrim.classList.add('on');document.body.style.overflow='hidden'};
+q('#cartBtn').onclick=()=>open(drawer);q('#closeCart').onclick=closeAll;
+q('#searchBtn').onclick=()=>{open(sb);setTimeout(()=>sb.querySelector('input').focus(),300)};
+q('#closeSearch').onclick=closeAll;
+q('#burger').onclick=()=>{closeAll();mm.classList.add('open');document.body.style.overflow='hidden'};
+q('#closeMm').onclick=closeAll;scrim.onclick=closeAll;
+addEventListener('keydown',e=>{if(e.key==='Escape')closeAll()});
+/* mega menu */
+const mega=q('#mega'),shopBtn=q('#shopBtn');
+let megaT;
+const megaOn=()=>{clearTimeout(megaT);mega.classList.add('open')},megaOff=()=>{megaT=setTimeout(()=>mega.classList.remove('open'),220)};
+if(shopBtn){shopBtn.addEventListener('mouseenter',megaOn);shopBtn.addEventListener('click',()=>mega.classList.toggle('open'));shopBtn.parentElement.addEventListener('mouseleave',megaOff);mega.addEventListener('mouseenter',megaOn);mega.addEventListener('mouseleave',megaOff)}
+/* page wipe */
+qa('a[href]').forEach(a=>a.addEventListener('click',e=>{const href=a.getAttribute('href');
+if(reduce||!href||href.startsWith('#')||a.target||href.startsWith('http'))return;
+if(a.origin!==location.origin)return;
+e.preventDefault();try{sessionStorage.setItem('wipe','1')}catch(_){}const w=q('#wipe');w.classList.remove('go');void w.offsetWidth;w.classList.add('go');
+setTimeout(()=>location.href=href,300)}));
+/* wipe entrance */if(!reduce){const w=q("#wipe");let done=false;
+const openW=()=>{if(done)return;done=true;const was=document.documentElement.classList.contains("wi");document.documentElement.classList.remove("wi");try{sessionStorage.removeItem("wipe")}catch(e){}
+w.style.transform="";w.style.transformOrigin="";if(was){w.classList.add("in");
+setTimeout(()=>w.classList.remove("in"),520)}};
+if(document.readyState==="complete")openW();
+else{addEventListener("load",openW);setTimeout(openW,800)}}
+/* form */
+q('.nform')?.addEventListener('submit',e=>{e.preventDefault();const b=e.target.querySelector('button');b.textContent='Terima kasih ✓'});
+})();
+</script>
+</body></html>
